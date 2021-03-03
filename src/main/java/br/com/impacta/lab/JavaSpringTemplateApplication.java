@@ -40,8 +40,27 @@ public class JavaSpringTemplateApplication {
 		produto.codigo = 1;
 		produto.descricao = "Camisa";
 		produto.valor = 70.00;
+		Produto Shorts = new Produto();
+		Shorts.codigo = 2;
+		Shorts.descricao = "Shorts";
+		Shorts.valor = 57.50;
 		
-		String resumo = produto.montarResumo(produto);
+		Produto Meia = new Produto();
+		Meia.codigo = 3;
+		Meia.descricao = "Meia";
+		Meia.valor = 9.99;
+		
+		Produto Toca = new Produto();
+		Toca.codigo = 4;
+		Toca.descricao = "Toca";
+		Toca.valor = 35.00;
+		
+		Produto Luva = new Produto();
+		Luva.codigo = 5;
+		Luva.descricao = "Luva";
+		Luva.valor = 19.50;
+		
+		String resumo = Camisa.montarResumo();
 		
 		System.out.println(resumo);
 	}
